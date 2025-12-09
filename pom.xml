@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mayik</groupId>
-	<artifactId>orchestrator-ms</artifactId>
+	<artifactId>orchestator-ms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>orchestrator-ms</name>
+	<name>orchestator-ms</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
