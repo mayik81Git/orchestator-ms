@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orchestrator-ms-service
+spec:
+  selector:
+    app: orchestrator-ms # Debe coincidir con el label del Deployment
+  ports:
+    - protocol: TCP
+      port: 80 # Puerto del Service
+      targetPort: 8083 # Puerto real de la aplicación
