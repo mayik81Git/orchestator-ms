@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orchestrator-ms-deployment
+  name: orchestator-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: orchestrator-ms
+      app: orchestator-ms
   template:
     metadata:
       labels:
-        app: orchestrator-ms
+        app: orchestator-ms
     spec:
       containers:
-        - name: orchestrator-ms-container
-          image: ghcr.io/mayik81git/orchestrator-ms:latest # ¡VERIFICA EL NOMBRE DE TU REPO AQUI!
+        - name: orchestator-ms-container
+          image: ghcr.io/mayik81git/orchestator-ms:latest # ¡VERIFICA EL NOMBRE DE TU REPO AQUI!
           ports:
             - containerPort: 8083
           env:
